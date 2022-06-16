@@ -1,0 +1,63 @@
+import java.util.Random; 
+import java.util.Scanner;
+class randThread extends Thread
+{
+Random rm=new Random(); 
+public void run()
+{
+for(int i=0;i<10;i++)
+{
+System.out.println("Random no. : "+rm.nextInt(100)); 
+try
+{
+Thread.sleep(1000);
+}
+catch(InterruptedException ex)
+{
+Design and Analysis of Algorithm Laboratory (18CSL47)
+Dept ofISE, AJIET, Mangaluru. P a g e 32 | 73
+ex.printStackTrace();
+}
+}
+}
+}
+class squareThread extends Thread
+{
+int num; 
+squareThread(int n)
+{
+num=n;
+}
+public void run()
+{
+for(int i=1;i<+num;i++) 
+System.out.println("square of "+i+"-"+(i*i));
+}
+}
+class cubeThread extends Thread
+{
+int num; 
+cubeThread(int n)
+{
+num=n;
+}
+public void run()
+{
+for(int i=1;i<=num;i++) 
+System.out.println("Cube of "+i+"-"+i*i*i);
+}
+}
+public class MultithreadDemo
+{
+public static void main(String[] args) throws InterruptedException
+{
+System.out.println("Enter the value of n"); 
+int n=new Scanner(System.in).nextInt(); 
+randThread t1=new randThread(); 
+squareThread t2=new squareThread(n); 
+cubeThread t3=new cubeThread(n);
+t1.start();
+t2.start();
+t3.start();
+}
+}
