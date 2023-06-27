@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>Functions program 4</title>
+</head>
+<body>
+<script type="text/javascript">
+  // Function to find the leftmost vowel
+  function findLeftmostVowel(str) {
+    var len = str.length;
+    var i;
+    for (i = 0; i < len; i++) {
+      var ch = str.substr(i, 1);
+      if (ch === 'a' || ch === 'A' || ch === 'e' || ch === 'E' || ch === 'i' || ch === 'I' || ch === 'o' || ch === 'O' || ch === 'u' || ch === 'U') {
+        document.write("<br>Leftmost vowel of " + str + " is: " + ch + ", position is: " + (i + 1));
+        break;
+      }
+    }
+  }
+
+  // Function to find the reverse of the number
+  function reverseNumber(num) {
+    var org = num;
+    var rev = 0;
+    while (num > 0) {
+      rev = rev * 10 + num % 10;
+      num = parseInt(num / 10);
+    }
+    document.write("<br><br>Reverse of the number " + org + " is: " + rev);
+  }
+
+  var string = prompt("Enter a string:");
+  findLeftmostVowel(string);
+
+  var number = prompt("Enter a number:");
+  number = parseInt(number);
+  reverseNumber(number);
+</script>
+</body>
+</html>
