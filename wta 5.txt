@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="prg5.css" ?>
+<students>
+<h1>Shreya Y 4JK20IS051</h1>
+  <student1>
+    <head>Student1</head>
+    <usn>4JK15IS001</usn>
+    <name>ABC</name>
+    <college-name>AJ Engineering College</college-name>
+    <branch>Information Science</branch>
+    <joining-year>Joining Year 2015</joining-year>
+    <email-id>abc@yahoo.com</email-id>
+  </student1>
+  <student2>
+    <head>Student2</head>
+    <usn>4JK15IS002</usn>
+    <name>Rao Sahana</name>
+    <college-name>AJ Engineering College</college-name>
+    <branch>Information Science</branch>
+    <joining-year>Joining Year 2015</joining-year>
+    <email-id>Sahana@yahoo.com</email-id>
+  </student2>
+  <student3>
+    <head>Student3</head>
+    <usn>4JK15IS003</usn>
+    <name>Preethi</name>
+    <college-name>AJ Engineering College</college-name>
+    <branch>Information Science</branch>
+    <joining-year>Joining Year 2015</joining-year>
+    <email-id>Preethi@yahoo.com</email-id>
+  </student3>
+</students>
+
+
+
+
+//css
+
+/* Center the contents and reduce the width */
+students {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  max-width: 600px; /* Reduce the width */
+  margin: 0 auto; /* Center horizontally */
+}
+
+student {
+  font-size: 16px;
+  color: red;
+  background-color: green;
+}
+
+head {
+  font-family: Arial;
+  color: blue;
+  font-size: 50px;
+}
+
+student1 {
+  background-color: silver;
+  display: block;
+}
+
+student2 {
+  background-color: purple;
+  display: block;
+}
+
+student3 {
+  background-color: purple;
+  display: block;
+}
+
+usn {
+  font-family: Times New Roman;
+  color: red;
+  font-size: 32px;
+}
+
+college-name {
+  color: aqua;
+  font-family: Helvetica;
+}
+
+branch {
+  font-style: italic;
+}
+
+joining-year {
+  color: maroon;
+  display: block;
+}
+
+email-id {
+  color: navy;
+}
