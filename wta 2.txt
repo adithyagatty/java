@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         th {
+            background-color: yellow; /* Set header background color */
+            border: 1px solid black; /* Add border to header cells */
+         }
+         td {
+            text-align: center;
+         }
+         table {
+            float: right; /* Display the table on the right side */
+         }
+      </style>
+      <center>
+         <h1 style="color: blue;">Squares and Cubes of Numbers from 1 to 10</h1> <!-- Set header color -->
+      </center>
+   </head>
+   <body>
+      <table border="1" align="center">
+         <tr>
+            <th>Square</th>
+            <th>Cube</th>
+         </tr>
+         <script type="text/javascript">
+            var n = 0;
+            for (n = 1; n <= 10; n++) {
+               document.write("<tr><td>", n * n, "</td>");
+               document.write("<td>", n * n * n, "</td></tr>");
+            }
+         </script>
+      </table>
+   </body>
+</html>
