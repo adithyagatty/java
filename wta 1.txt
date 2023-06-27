@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+       <h2>CALCULATOR</h2>
+       <p> SHRAVYA 4JK20IS049 </p>
+       <style>
+         *{
+             TEXT-ALIGN:CENTER;;
+             BACKGROUND-COLOR:PINK;
+          }
+       </style>
+     <script type = "text/javascript">
+      var a,b,result;
+      function setValues()
+      {
+                a=Number(document.getElementById("a").value);
+                b=Number(document.getElementById("b").value);
+      }
+      function add()
+       {
+             setValues();
+             result=a + b;
+             alert("The sum =" +result);
+             resetValues();
+        }
+       function sub()
+       {
+               setValues();
+               result=a - b;
+               alert("The difference =" +result);
+               resetValues();
+        }
+        function mul()
+        {
+               setValues();
+               result=a * b;
+               alert("The product =" +result);
+             resetValues();
+        }
+        function div()
+        {
+               setValues();
+               result= a / b;
+               alert("The quotient =" +result);
+              resetValues();
+         }
+         function resetValues()
+         {
+             a=Number(document.getElementById("a").value=" ");
+             b=Number(document.getElementById("b").value=" ");
+         }
+       </script>
+       </head>
+       <body>
+       <label>
+       <label>A<input id="a"type="text"/></label><BR/><BR/>
+       <label>B<input id="b"type="text"/><BR/></LABEL><BR/>
+       <input type = "button" onclick = "add()" value = "sum"/>
+       <input type = "button" onclick = "sub()" value = "diff"/>
+       <input type = "button" onclick = "mul()" value = "prod"/>
+       <input type = "button" onclick = "div()" value = "quotient"/>
+       </body>
+</html>
